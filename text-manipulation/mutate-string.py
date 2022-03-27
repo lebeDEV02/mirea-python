@@ -3,7 +3,7 @@ s = list(s)
 
 # a
 for i in range(len(s)):
-    if s[i] == "a" and s[i+1] == "b" and s[i+2] == "c" and i+2 < len(s):
+    if i+2 < len(s) and s[i] == "a" and s[i+1] == "b" and s[i+2] == "c":
         s[i] = "d"
         s[i + 1] = "e"
         s[i + 2] = "f"
